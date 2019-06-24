@@ -122,7 +122,7 @@ From here on, we assume XLNet-Large and XLNet-base has been downloaded to `$LARG
     --model_dir=exp/sts-b \
     --uncased=False \
     --spiece_model_file=${LARGE_DIR}/spiece.model \
-    --model_config_path=${LARGE_DIR}/model_config.json \
+    --model_config_path=${LARGE_DIR}/xlnet_config.json \
     --init_checkpoint=${LARGE_DIR}/xlnet_model.ckpt \
     --max_seq_length=128 \
     --train_batch_size=8 \
@@ -147,7 +147,7 @@ From here on, we assume XLNet-Large and XLNet-base has been downloaded to `$LARG
     --model_dir=exp/sts-b \
     --uncased=False \
     --spiece_model_file=${LARGE_DIR}/spiece.model \
-    --model_config_path=${LARGE_DIR}/model_config.json \
+    --model_config_path=${LARGE_DIR}/xlnet_config.json \
     --max_seq_length=128 \
     --eval_batch_size=8 \
     --num_hosts=1 \
@@ -321,7 +321,7 @@ python data_utils.py \
 	--num_passes=20 \
 	--bi_data=True \
 	--sp_path=spiece.model \
-	--mask_alpht=6 \
+	--mask_alpha=6 \
 	--mask_beta=1 \
 	--num_predict=85
 ```
